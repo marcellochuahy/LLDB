@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LLDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RB9-5L-edT">
+                                <rect key="frame" x="20" y="76" width="374" height="374"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEz-vh-H9e">
+                                        <rect key="frame" x="16" y="16" width="342" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-Tt-5H8">
+                                        <rect key="frame" x="16" y="58" width="342" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNp-6g-NwT">
+                                        <rect key="frame" x="168" y="124" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAM-OW-BUQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mb1-Yd-3nm">
+                                        <rect key="frame" x="187" y="218" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ceq-Tt-5H8" firstAttribute="leading" secondItem="RB9-5L-edT" secondAttribute="leading" constant="16" id="2Cf-0v-4pd"/>
+                                    <constraint firstItem="mEz-vh-H9e" firstAttribute="leading" secondItem="RB9-5L-edT" secondAttribute="leading" constant="16" id="3Yu-PS-Dt0"/>
+                                    <constraint firstItem="vNp-6g-NwT" firstAttribute="centerX" secondItem="RB9-5L-edT" secondAttribute="centerX" id="BTh-PB-aRn"/>
+                                    <constraint firstItem="ceq-Tt-5H8" firstAttribute="top" secondItem="mEz-vh-H9e" secondAttribute="bottom" constant="8" id="D7f-fU-D8i"/>
+                                    <constraint firstItem="vNp-6g-NwT" firstAttribute="top" secondItem="ceq-Tt-5H8" secondAttribute="bottom" constant="32" id="KxK-7I-3d3"/>
+                                    <constraint firstItem="mEz-vh-H9e" firstAttribute="top" secondItem="RB9-5L-edT" secondAttribute="top" constant="16" id="Rfm-01-K12"/>
+                                    <constraint firstItem="mb1-Yd-3nm" firstAttribute="centerX" secondItem="RB9-5L-edT" secondAttribute="centerX" id="RjG-tT-hOs"/>
+                                    <constraint firstAttribute="trailing" secondItem="mEz-vh-H9e" secondAttribute="trailing" constant="16" id="SzP-Bd-z16"/>
+                                    <constraint firstItem="mb1-Yd-3nm" firstAttribute="top" secondItem="vNp-6g-NwT" secondAttribute="bottom" constant="64" id="k3r-Vh-ABV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ceq-Tt-5H8" secondAttribute="trailing" constant="16" id="oRA-7g-oAY"/>
+                                    <constraint firstAttribute="width" secondItem="RB9-5L-edT" secondAttribute="height" multiplier="1:1" id="yIp-jX-ziU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RB9-5L-edT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7nb-dB-aLo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RB9-5L-edT" secondAttribute="trailing" constant="20" id="epT-QZ-y1k"/>
+                            <constraint firstItem="RB9-5L-edT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="fPY-k5-ShY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="vNp-6g-NwT" id="Q4x-yz-eyt"/>
+                        <outlet property="feedbackLabel" destination="mb1-Yd-3nm" id="EFl-N2-SaQ"/>
+                        <outlet property="loginView" destination="RB9-5L-edT" id="O3g-4r-kVB"/>
+                        <outlet property="passwordTextField" destination="ceq-Tt-5H8" id="Ex1-iE-mYR"/>
+                        <outlet property="userTextField" destination="mEz-vh-H9e" id="Tmz-qP-dWW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+</document>
